@@ -5,8 +5,8 @@
     --title-background: #09742e;
     --table-heading: rgb(61, 24, 196);
     --text-color: #fff;
-    --tr-odd-color:#3333FF ;
-    --tr-even-color: #3300FF;
+    --tr-odd-color:#ff3399 ;
+    --tr-even-color: #ff33FF;
     --available-btn-color: red;
     --not-available-btn-color: rgb();
 }
