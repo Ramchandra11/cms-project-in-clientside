@@ -132,6 +132,73 @@
 			</div>
 		</div>
 </section>
+	<section class="services" id="services">
+	<h2 class="heading"> Check<span> Result</span> </h2>
+	<div class="services-container">
+  <div class="CEN">
+   <div class="container-fluid">
+
+	<div class="page-header" id="banner">
+	  <div class="row">
+		<div class="col-lg-3">
+		  <div class="list-group">
+  <div class="jumbotron">
+	<h5>Yearly/Semester Check Results</h5>
+  
+  </div>
+  <div class="form_jumbotron">
+  <div class="col-lg-12" style="margin-top:20px;">
+	<form name="frmCheckResults" id="frmCheckResults" action="https://itms.ctevt.org.np:5580/search_results" method="post" target="_blank" autocomplete="off">
+	  <div class="row" >
+		<label for="" class="col-lg-3 control-label">Examination Year:</label>
+		<div class="col-lg-3">
+		  <select required name="src_year" id="src_year" class="form-control">
+				<option value="">-- Select --</option>
+										<option value="2080" >
+						2080                        </option>
+											<option value="2079" >
+						2079                        </option>
+											<option value="2078" >
+						2078                        </option>
+											<option value="2077" >
+						2077                        </option>
+									</select>
+		</div>
+	  </div>
+	  <br />
+	  <div class="row">
+		<label for="" class="col-lg-3 control-label">Level :</label>
+		<div class="col-lg-3">
+		   <select  name="src_level" id="src_level" class="form-control" required>
+			  <option value="">-- Select --</option>
+				<option value="2">Pre-diploma</option>
+				<option value="3">Diploma/PCL</option>
+			  </select>
+		</div>
+	  </div>
+	  <br />
+	  <div class="row">
+		<label for="" class="col-lg-3 control-label" >Symbol Number :</label>
+		<div class="col-lg-5" >
+		  <input type="text" name="exam_symbol_number" id="exam_symbol_number"  placeholder="e.g. 1000234" required >
+		</div>
+	  </div>
+	  <br />
+	  <div class="row">
+			<label for="" class="col-lg-3 control-label" >Date of Birth (B.S.) :</label>
+			<div class="col-lg-5" >
+				<input type="text" name="dob" id="dob" placeholder="Date Format: YYYY-MM-DD" class="form-control"  required >
+			</div>
+	  </div>
+	  <br />
+	  <div class="col-lg-12 text-center"><input type="submit" name="submit" value="Search" class="btn btn-primary"></div>
+	  </div>
+	</form>
+  </div>
+</div>
+</div>
+	</div>
+</section>
 <style>
 	*{
 			  margin: 0;
@@ -166,6 +233,33 @@
 		  .sems .sem a:hover{
 			  background-color: #C0392B;
 		  }
+			  .CEN{
+			text-align: center;
+			font-size: 20px;
+		  }
+		  .jumbotron {
+    background-color: #144f82;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 4px solid #b08699;
+}
+
+.jumbotron h5{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.jumbotrons{
+    padding: 20px 0px;
+}
+
+.form_jumbotron{
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #FFF;
+}
   </style>
 <div class="sems">
 	<div class="title">Semesters:</div>
